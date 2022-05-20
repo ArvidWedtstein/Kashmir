@@ -31,94 +31,96 @@
 <script>
 export default {
   name: "index",
-  data: () => ({
-    timeline: [
-      {
-        title: "Kashmir",
-        subtitle: "",
-        text: "Kashmir er navnet på et vakkert fjellområde. Området har vært preget av konflikt i mange år og anses for å være et strategisk område på grunn av fjell og naturressurser. Deler av befolkningen ønsker uavhengighet, mens India og Pakistan krangler om hvem som er den rettmessige eier.",
-        img: "kashmir-mountains.jpg",
-      },
-      {
-        title: "Begynnelsen",
-        subtitle: "1850 ish",
-        text: "På midten av 1800-tallet var dagens India og Pakistan, inkludert Kashmir, under britisk kontroll. Kashmir ble på den tiden ledet av en fyrste under et slags selvstyre.",
-        img: "kashmir-prince.jpg",
-      },
-      {
-        title: "Splittelsen",
-        subtitle: "Etter andre verdenskrig",
-        text: "Etter andre verdenskrig vant Britisk India selvstendighet og kvittet seg dermed med britene. Britisk India ble da til India og Pakistan siden de ønsket å ha ett land for muslimer og ett for hinduer. I all hast bestemte britene seg for å splitte kashmir. Ved splittelsen oppsto det en blodig konflikt om hvilket land Kashmir skulle tilhøre siden mesteparten av befolkningen i Kashmir var muslimer, men fyrsten var hindu. Da fyrsten fikk et valg om å velge side valgte han å være nøytral.",
-        img: "Muslim-Hindu.png",
-      },
-      {
-        title: "Frykten",
-        subtitle: "Oktober, 1947",
-        text: "I frykt for at fyrsten skulle bli en del av india, så protesterte befolkningen av kashmir i byen Poonch. Ikke lenger etterpå kom gruppe bevæpnede stammefolk fra Pakistan's norden som gikk til angrep på fyrstedømmet oktober, 1947",
-        img: ""
-      },
-      {
-        title: "Selvstendighet",
-        subtitle: "",
-        text: "Ut av frykt ba fyrsten India om militærisk hjelp imot å bli en del av india. India aksepterte dette forslaget og gikk dermed inn med tropper i kashmir. Pakisten var ikke helt enige i dette og mente at fyrsten ikke hadde rett til å gi Kashmir til India og sendte derfor også inn styrker i kashmir. Dette endte opp i en 2 årig krig som kostet mellom 3000 og 5000 liv.",
-        img: "da-war.png",
-      },
-      {
-        title: "Fredsavtalen",
-        subtitle: "Høsten, 1948",
-        text: "FN prøvde å få til en fredsavstale og våpenhvile mellom india og pakistan. Fredsavtalen endte med at pakisten fikk rundt en tredjedel av Kashmir, mens India satt igjen med resten.",
-        img: "peace-line.png",
-      },
-      {
-        title: "Avstemningen",
-        subtitle: "",
-        text: "Det skulle holdes en folkeavstemning om Kashmirs fremtid. India skulle også få lov å beholde en liten styrke for å overvåke sikkerheten. Etter hvert som årene gikk nektet Pakistan å trekke ut styrkene sine, samtidig som India mente det ikke var nødvendig med folkeavstemning. Dermed brøt begge fredsavtalen. FN foreslo deretter at begge landene skulle trekke ut samtidig. Dette ble godtatt av Pakistan, men ikke India. Det endte med at avstemningen aldri ble holdt...",
-        img: "",
-      },  
-      {
-        title: "China has come",
-        subtitle: "1962",
-        text: "Plutselig valgte Kina å overta den nordlige delen av Kashmir. Etter en liten krig med India overtok de rundt 17% av Kashmir. Kina har til den dag idag kontroll over område til tross for at India mener Kina ikke har noen rett på det.",
-        img: "Kashmir.png",
-      },
-      {
-        title: "Protesten",
-        subtitle: "1987",
-        text: "På den politiske fronten i 1987 rigget India valget og erklærte et pro-India parti som vinner. Dette fikk mange kashmirer til å se rødt, som igjen følte de ikke fikk muligheten til å bli hørt. Kashmirene gikk dermed til protest mot okkupasjoen.",
-        img: "kashmir-protest.png"
-      },
-      {
-        title: "Protesten møter motstand",
-        subtitle: "1987",
-        text: "India møtte denne protesten med hard motstand. Dette eskalerte fort til mer voldlighet.",
-        img: "kashmir-protest-resist.png"
-      },
-      {
-        title: "India går til angrep",
-        subtitle: "Januar, 1988",
-        text: "I Januar 1988, så våpnet India ild på demonstrantene. Mer enn 600 demonstranter døde. Motstandsorganisasjonen jammu & kashmir liberation front begynte til og med å rekrutere unge muslimere til å kjempe for friheten.",
-        img: "india-open-fire.png"
-      },
-      {
-        title: "Løsningen?",
-        subtitle: "Slutten av 19-tallet",
-        text: "Pakistan så en mulighet i denne konflikten. De introduserte en ny gruppe av radikale islamske krigere som kjempet for et mer pakistan kontrollert kashmir. På slutten av 90-tallet hadde disse gruppene stor kontroll over opprøret. India svarte med å plassere ut 500.000 soldater i Kashmir som slo ned på disse pakistanske gruppene og demonstranter.",
-        img: "da-fighters.png"
-      },
-      {
-        title: "Eskalasjon",
-        subtitle: "Februar, 2019",
-        text: "I februar 2019 begynte situasjonen mellom pakistan og india og eskalere igjen da en konvoi med Indiske sikkerhetstropper ble angrepet av en selvmordsbomber fra en terrorgruppe i pakistan. Selvmordsbomberen klarte å drepte minst 40 indiske soldater. 12 dager senere utførte India flere luftangrep i det nord-vestlige pakistan. Deretter skjøt Pakistan ned minst ett indisk fly. ",
-        img: ""
-      },
-      {
-        title: "Kashmir i dag",
-        subtitle: "",
-        text: "Kashmir er i dag er splittet mellom India, Pakistan og Kina. Området er beskyttet av mer enn en halv million indiske styrker og en dødlig blanding av terrorgrupper",
-        img: "kashmir-mountains.jpg",
-      },
-    ]
-  }),
+  data() {
+    return {
+      timeline: [
+        {
+          title: "Kashmir",
+          subtitle: "",
+          text: "Kashmir er navnet på et vakkert fjellområde. Området har vært preget av konflikt i mange år og anses for å være et strategisk område på grunn av fjell og naturressurser. Deler av befolkningen ønsker uavhengighet, mens India og Pakistan krangler om hvem som er den rettmessige eier.",
+          img: "kashmir-mountains.jpg",
+        },
+        {
+          title: "Begynnelsen",
+          subtitle: "1850 ish",
+          text: "På midten av 1800-tallet var dagens India og Pakistan, inkludert Kashmir, under britisk kontroll. Kashmir ble på den tiden ledet av en fyrste under et slags selvstyre.",
+          img: "kashmir-prince.jpg",
+        },
+        {
+          title: "Splittelsen",
+          subtitle: "Etter andre verdenskrig",
+          text: "Etter andre verdenskrig vant Britisk India selvstendighet og kvittet seg dermed med britene. Britisk India ble da til India og Pakistan siden de ønsket å ha ett land for muslimer og ett for hinduer. I all hast bestemte britene seg for å splitte kashmir. Ved splittelsen oppsto det en blodig konflikt om hvilket land Kashmir skulle tilhøre siden mesteparten av befolkningen i Kashmir var muslimer, men fyrsten var hindu. Da fyrsten fikk et valg om å velge side valgte han å være nøytral.",
+          img: "Muslim-Hindu.png",
+        },
+        {
+          title: "Frykten",
+          subtitle: "Oktober, 1947",
+          text: "I frykt for at fyrsten skulle bli en del av india, så protesterte befolkningen av kashmir i byen Poonch. Ikke lenger etterpå kom gruppe bevæpnede stammefolk fra Pakistan's norden som gikk til angrep på fyrstedømmet oktober, 1947",
+          img: ""
+        },
+        {
+          title: "Selvstendighet",
+          subtitle: "",
+          text: "Ut av frykt ba fyrsten India om militærisk hjelp imot å bli en del av india. India aksepterte dette forslaget og gikk dermed inn med tropper i kashmir. Pakisten var ikke helt enige i dette og mente at fyrsten ikke hadde rett til å gi Kashmir til India og sendte derfor også inn styrker i kashmir. Dette endte opp i en 2 årig krig som kostet mellom 3000 og 5000 liv.",
+          img: "da-war.png",
+        },
+        {
+          title: "Fredsavtalen",
+          subtitle: "Høsten, 1948",
+          text: "FN prøvde å få til en fredsavstale og våpenhvile mellom india og pakistan. Fredsavtalen endte med at pakisten fikk rundt en tredjedel av Kashmir, mens India satt igjen med resten.",
+          img: "peace-line.png",
+        },
+        {
+          title: "Avstemningen",
+          subtitle: "",
+          text: "Det skulle holdes en folkeavstemning om Kashmirs fremtid. India skulle også få lov å beholde en liten styrke for å overvåke sikkerheten. Etter hvert som årene gikk nektet Pakistan å trekke ut styrkene sine, samtidig som India mente det ikke var nødvendig med folkeavstemning. Dermed brøt begge fredsavtalen. FN foreslo deretter at begge landene skulle trekke ut samtidig. Dette ble godtatt av Pakistan, men ikke India. Det endte med at avstemningen aldri ble holdt...",
+          img: "",
+        },  
+        {
+          title: "China has come",
+          subtitle: "1962",
+          text: "Plutselig valgte Kina å overta den nordlige delen av Kashmir. Etter en liten krig med India overtok de rundt 17% av Kashmir. Kina har til den dag idag kontroll over område til tross for at India mener Kina ikke har noen rett på det.",
+          img: "Kashmir.png",
+        },
+        {
+          title: "Protesten",
+          subtitle: "1987",
+          text: "På den politiske fronten i 1987 rigget India valget og erklærte et pro-India parti som vinner. Dette fikk mange kashmirer til å se rødt, som igjen følte de ikke fikk muligheten til å bli hørt. Kashmirene gikk dermed til protest mot okkupasjoen.",
+          img: "kashmir-protest.png"
+        },
+        {
+          title: "Protesten møter motstand",
+          subtitle: "1987",
+          text: "India møtte denne protesten med hard motstand. Dette eskalerte fort til mer voldlighet.",
+          img: "kashmir-protest-resist.png"
+        },
+        {
+          title: "India går til angrep",
+          subtitle: "Januar, 1988",
+          text: "I Januar 1988, så våpnet India ild på demonstrantene. Mer enn 600 demonstranter døde. Motstandsorganisasjonen jammu & kashmir liberation front begynte til og med å rekrutere unge muslimere til å kjempe for friheten.",
+          img: "india-open-fire.png"
+        },
+        {
+          title: "Løsningen?",
+          subtitle: "Slutten av 19-tallet",
+          text: "Pakistan så en mulighet i denne konflikten. De introduserte en ny gruppe av radikale islamske krigere som kjempet for et mer pakistan kontrollert kashmir. På slutten av 90-tallet hadde disse gruppene stor kontroll over opprøret. India svarte med å plassere ut 500.000 soldater i Kashmir som slo ned på disse pakistanske gruppene og demonstranter.",
+          img: "da-fighters.png"
+        },
+        {
+          title: "Eskalasjon",
+          subtitle: "Februar, 2019",
+          text: "I februar 2019 begynte situasjonen mellom pakistan og india og eskalere igjen da en konvoi med Indiske sikkerhetstropper ble angrepet av en selvmordsbomber fra en terrorgruppe i pakistan. Selvmordsbomberen klarte å drepte minst 40 indiske soldater. 12 dager senere utførte India flere luftangrep i det nord-vestlige pakistan. Deretter skjøt Pakistan ned minst ett indisk fly. ",
+          img: ""
+        },
+        {
+          title: "Kashmir i dag",
+          subtitle: "",
+          text: "Kashmir er i dag er splittet mellom India, Pakistan og Kina. Området er beskyttet av mer enn en halv million indiske styrker og en dødlig blanding av terrorgrupper",
+          img: "kashmir-mountains.jpg",
+        },
+      ]    
+    }
+  },
   methods: {
     fade() {
       let lastKnownScrollPosition = 0;
